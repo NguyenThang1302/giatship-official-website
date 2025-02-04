@@ -49,7 +49,7 @@ a, a:hover, a:active {
 ---------------------------------*/
 body {
     background: #fff;
-    font-family: 'Quicksand', sans-serif;
+    font-family: Nunito, sans-serif;
     font-size: 14px;
     font-weight: normal;
     color: #888888;
@@ -59,7 +59,7 @@ body {
 h2 {
     font-size: 45px;
     color: #222222;
-    font-family: 'Quicksand', sans-serif;
+    font-family: Nunito, sans-serif;
     font-weight: normal;
     margin: 0px 0 25px 0;
     text-align: center;
@@ -67,7 +67,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'Quicksand', sans-serif;
+    font-family: Nunito, sans-serif;
     font-weight: 600;
     color: #222222;
     font-size: 18px;
@@ -77,7 +77,7 @@ h3 {
 h6 {
     font-size: 16px;
     color: #888888;
-    font-family: 'Quicksand', sans-serif;
+    font-family: Nunito, sans-serif;
     font-weight: 400;
     text-align: center;
     margin: 0 0 60px 0;
@@ -88,7 +88,7 @@ p {
     margin: 0;
 }
 h2,h3,h4,h5,h6{
-    font-family: "Quicksand",sans-serif,;
+    font-family: Nunito, sans-serif;
 }
 /* Header Styles
 ---------------------------------*/
@@ -334,7 +334,7 @@ a.read_more:hover {
 ---------------------------------*/
 
 #service {
-    padding: 100px 0px;
+    padding: 50px 0px;
     background: #000;
 }
 #service h2{
@@ -489,99 +489,72 @@ a.contact_btn:hover {
 }
 
 
-/* Portfolio
----------------------------------*/
-
-
-#Portfolio {
-    padding: 100px 0px;
-    margin-bottom: -50px;
+/* Price Table*/
+.Laundry-Price {
+    font-family: Nunito, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: #f4f4f4;
+    margin: 0;
 }
-
-.Portfolio-nav {
-    padding: 0;
-    margin: 0 0 45px 0;
-    list-style: none;
+.pricing-container {
     text-align: center;
 }
-
-.Portfolio-nav li {
-    margin: 0 10px;
-    display: inline;
+.toggle-container {
+    margin-bottom: 20px;
+    color: black;
 }
-
-.Portfolio-nav li a {
-    display: inline-block;
-    padding: 10px 22px;
-    font-size: 12px;
-    line-height: 20px;
-    color: #222222;
-    border-radius: 4px;
-    text-transform: uppercase;
-    background: #f7f7f7;
-    margin-bottom: 5px;
-    transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
+.pricing-table {
+    display: flex;
+    gap: 20px;
 }
-
-.Portfolio-nav li a:hover {
-    background: #bb0808;
-    color: #fff;
-    text-decoration: none;
-}
-
-.portfolioContainer {
-    margin: 0 auto;
-    padding-left: 15px;
-    width: auto !important;
-}
-
-.Portfolio-box {
-    text-align: center;
+.plan {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 350px;
-    overflow: hidden;
-    float: left;
-    padding: 12px 0px;
+    color: black;
+}
+.plan h2 {
+    margin: 10px 0;
+    font-weight: bold;
+}
+.price1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 15px 0;
 }
 
-.Portfolio-box img {
-    transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
+.price2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 15px 0;
 }
 
-.Portfolio-box img:hover {
-    opacity: 0.6;
+.price3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 15px 0;
 }
 
-.Portfolio-nav li a.current {
-    background: #bb0808;
-    color: #fff;
+.features {
+    list-style: none;
+    padding: 0;
+}
+.features li {
+    margin: 5px 0;
+}
+.price-table-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: black;
+    color: white;
     text-decoration: none;
-}
-
-img {
-    max-width: 100%;
-}
-
-/* no transition on .isotope container */
-
-.isotope .isotope-item {
-  /* change duration value to whatever you like */
-    -webkit-transition-duration: 0.6s;
-    -moz-transition-duration: 0.6s;
-    transition-duration: 0.6s;
-}
-
-.isotope .isotope-item {
-    -webkit-transition-property: -webkit-transform, opacity;
-    -moz-transition-property: -moz-transform, opacity;
-    transition-property: transform, opacity;
-}
-
-.page_section.paddind {
-    /* padding-bottom: 60px; */
+    border-radius: 5px;
 }
 
 
@@ -1820,7 +1793,7 @@ div.mc-image {
     width: 48%;
     padding-top: 0px;
     padding-right: 0px;
-    padding-bottom: 80px;
+    /* padding-bottom: 80px; */
     /* padding-left: 0px; */
     z-index: 100;
   }
