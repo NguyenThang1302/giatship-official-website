@@ -493,6 +493,7 @@ a.contact_btn:hover {
 @media screen and (min-width:100px) and (max-width: 980px) {
     .pricing-table{
       flex-direction: column;
+      align-items: center;
     }}
 
 .Laundry-Price {
@@ -500,7 +501,7 @@ a.contact_btn:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    min-height: 50vh;
     background-color: #f4f4f4;
     margin: 0;
 }
