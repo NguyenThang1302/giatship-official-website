@@ -515,6 +515,7 @@ a.contact_btn:hover {
 .pricing-table {
     display: flex;
     gap: 20px;
+    margin-bottom: 20px;
 }
 .plan {
     background: white;
