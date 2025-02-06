@@ -490,6 +490,11 @@ a.contact_btn:hover {
 
 
 /* Price Table*/
+@media screen and (min-width:100px) and (max-width: 980px) {
+    .pricing-table{
+      flex-direction: column;
+    }}
+
 .Laundry-Price {
     font-family: Nunito, sans-serif;
     display: flex;
