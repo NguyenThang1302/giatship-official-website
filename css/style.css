@@ -1828,8 +1828,8 @@ div.mc-image {
   }
   
   .cardImg {
-    /* width: 100px; */
-    height: 105px;
+    width: 100px;
+    /* height: 105px; */
   }
   
   .cardImgContainer {
