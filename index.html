@@ -152,7 +152,7 @@
       <div class="pricing-table" id="pricing-table">
           <div class="plan">
               <h2>Quần Áo & Khăn</h2>
-              <p class="price1" data-monthly="25,000đ" data-yearly="40,000đ" data-over3="50,000đ" data-wholesale='Coming Soon'>25,000đ/kg</p>
+              <p class="price1" data-daily="25,000đ" data-monthly="25,000đ" data-yearly="40,000đ" data-over3="50,000đ" data-wholesale='Coming Soon'>25,000đ/kg</p>
               <!-- <ul class="features">
                   <li>Feature 1</li>
                   <li>Feature 2</li>
@@ -399,12 +399,12 @@
 </footer>
 
 <script>
-  // document.getElementById('togglePricing1').addEventListener('change', function() {
-  //     const prices = document.querySelectorAll('.price1');
-  //     prices.forEach(price => {
-  //         price.textContent = this.checked ? price.dataset.yearly + '/kg' : price.dataset.monthly + '/kg';
-  //     });
-  // });
+  document.getElementById('togglePricing1').addEventListener('change', function() {
+      const prices = document.querySelectorAll('.price1');
+      prices.forEach(price => {
+          price.textContent = this.checked ? price.dataset.daily + '/kg' : price.dataset.monthly + '/kg';
+      });
+  });
 
   document.getElementById('togglePricing2').addEventListener('change', function() {
       const prices = document.querySelectorAll('.price1');
@@ -441,17 +441,31 @@
       });
   });
 
-  document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
-    checkbox.addEventListener('change', function() {
-        if (this.checked) {
-            document.querySelectorAll('input[type="checkbox"]').forEach(otherCheckbox => {
-                if (otherCheckbox !== this) {
-                    otherCheckbox.checked = false;
+//   document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+//     checkbox.addEventListener('change', function() {
+//         if (this.checked) {
+//             document.querySelectorAll('input[type="checkbox"]').forEach(otherCheckbox => {
+//                 if (otherCheckbox !== this) {
+//                     otherCheckbox.checked = false;
+//                 }
+//             });
+//         }
+//     });
+// });
+
+document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+            checkbox.addEventListener('change', function() {
+                if (this.checked) {
+                    document.querySelectorAll('input[type="checkbox"]').forEach(otherCheckbox => {
+                        if (otherCheckbox !== this) {
+                            otherCheckbox.checked = false;
+                        }
+                    });
+                } else {
+                    this.checked = false;
                 }
             });
-        }
-    });
-});
+        });
 </script>
 <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
