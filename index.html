@@ -419,6 +419,20 @@
       });
   });
 
+  document.getElementById('togglePricing1').addEventListener('change', function() {
+      const prices = document.querySelectorAll('.price2');
+      prices.forEach(price => {
+          price.textContent = this.checked ? price.dataset.monthly + '/cái' : price.dataset.monthly + '/cái';
+      });
+  });
+
+  document.getElementById('togglePricing1').addEventListener('change', function() {
+      const prices = document.querySelectorAll('.price3');
+      prices.forEach(price => {
+          price.textContent = this.checked ? price.dataset.monthly + '/kg' : price.dataset.monthly + '/kg';
+      });
+  });
+
   document.getElementById('togglePricing2').addEventListener('change', function() {
       const prices = document.querySelectorAll('.price1');
       prices.forEach(price => {
@@ -426,10 +440,38 @@
       });
   });
 
+  document.getElementById('togglePricing2').addEventListener('change', function() {
+      const prices = document.querySelectorAll('.price2');
+      prices.forEach(price => {
+          price.textContent = this.checked ? price.dataset.monthly + '/cái' : price.dataset.monthly + '/cái';
+      });
+  });
+
+  document.getElementById('togglePricing2').addEventListener('change', function() {
+      const prices = document.querySelectorAll('.price3');
+      prices.forEach(price => {
+          price.textContent = this.checked ? price.dataset.monthly + '/kg' : price.dataset.monthly + '/kg';
+      });
+  });
+
   document.getElementById('togglePricing3').addEventListener('change', function() {
       const prices = document.querySelectorAll('.price1');
       prices.forEach(price => {
           price.textContent = this.checked ? price.dataset.over3 + '/lần giặt' : price.dataset.monthly + '/kg';
+      });
+  });
+
+  document.getElementById('togglePricing3').addEventListener('change', function() {
+      const prices = document.querySelectorAll('.price2');
+      prices.forEach(price => {
+          price.textContent = this.checked ? price.dataset.monthly + '/cái' : price.dataset.monthly + '/cái';
+      });
+  });
+
+  document.getElementById('togglePricing3').addEventListener('change', function() {
+      const prices = document.querySelectorAll('.price3');
+      prices.forEach(price => {
+          price.textContent = this.checked ? price.dataset.monthly + '/kg' : price.dataset.monthly + '/kg';
       });
   });
 
