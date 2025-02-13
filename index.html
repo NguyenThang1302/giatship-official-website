@@ -491,7 +491,7 @@
 // });
 
 document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
-            checkbox.addEventListener('change', function() {
+            checkbox.addEventListener('click', function() {
                 if (this.checked) {
                     document.querySelectorAll('input[type="checkbox"]').forEach(otherCheckbox => {
                         if (otherCheckbox !== this) {
