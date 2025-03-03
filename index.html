@@ -134,7 +134,7 @@
   <div class="pricing-container">
       <div class="toggle-container">
           <label>
-              <input type="checkbox" id="togglePricing1"> Dưới 1kg
+              <input type="checkbox" id="togglePricing1" checked> Dưới 1kg
           </label>
 
           <label>
@@ -413,23 +413,47 @@
 
 <script>
   document.getElementById('togglePricing1').addEventListener('change', function() {
-      const prices = document.querySelectorAll('.price1');
-      prices.forEach(price => {
+      const prices1 = document.querySelectorAll('.price1');
+      prices1.forEach(price => {
           price.textContent = this.checked ? price.dataset.daily + '/kg' : price.dataset.monthly + '/kg';
+      });
+      const prices2 = document.querySelectorAll('.price2');
+      prices2.forEach(price => {
+          price.textContent = this.checked ? price.dataset.monthly + '/cái' : price.dataset.monthly + '/cái';
+      });
+      const prices3 = document.querySelectorAll('.price3');
+      prices3.forEach(price => {
+          price.textContent = this.checked ? price.dataset.monthly + '/kg' : price.dataset.monthly + '/kg';
       });
   });
 
   document.getElementById('togglePricing2').addEventListener('change', function() {
-      const prices = document.querySelectorAll('.price1');
-      prices.forEach(price => {
+      const prices1 = document.querySelectorAll('.price1');
+      prices1.forEach(price => {
           price.textContent = this.checked ? price.dataset.yearly + '/lần giặt' : price.dataset.monthly + '/kg';
+      });
+      const prices2 = document.querySelectorAll('.price2');
+      prices2.forEach(price => {
+          price.textContent = this.checked ? price.dataset.monthly + '/cái' : price.dataset.monthly + '/cái';
+      });
+      const prices3 = document.querySelectorAll('.price3');
+      prices3.forEach(price => {
+          price.textContent = this.checked ? price.dataset.monthly + '/kg' : price.dataset.monthly + '/kg';
       });
   });
 
   document.getElementById('togglePricing3').addEventListener('change', function() {
-      const prices = document.querySelectorAll('.price1');
-      prices.forEach(price => {
+      const prices1 = document.querySelectorAll('.price1');
+      prices1.forEach(price => {
           price.textContent = this.checked ? price.dataset.over3 + '/lần giặt' : price.dataset.monthly + '/kg';
+      });
+      const prices2 = document.querySelectorAll('.price2');
+      prices2.forEach(price => {
+          price.textContent = this.checked ? price.dataset.monthly + '/cái' : price.dataset.monthly + '/cái';
+      });
+      const prices3 = document.querySelectorAll('.price3');
+      prices3.forEach(price => {
+          price.textContent = this.checked ? price.dataset.monthly + '/kg' : price.dataset.monthly + '/kg';
       });
   });
 
@@ -467,7 +491,7 @@
 // });
 
 document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
-            checkbox.addEventListener('change', function() {
+            checkbox.addEventListener('click', function() {
                 if (this.checked) {
                     document.querySelectorAll('input[type="checkbox"]').forEach(otherCheckbox => {
                         if (otherCheckbox !== this) {
@@ -475,7 +499,7 @@ document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
                         }
                     });
                 } else {
-                    this.checked = false;
+                    this.checked = true;
                 }
             });
         });
